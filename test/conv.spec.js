@@ -12,8 +12,8 @@ let lib;
 describe('Given traditional chinese', () => {
   describe('converting', () => {
     it('should return simplified chinese', () => {
-      expect(conv.tc2sc("傌")).to.be.equal("㐷"); // succeeds
-      //expect(conv.tc2sc("㑮")).to.be.equal("㗷"); // fails...
+      expect(conv.tc2sc("傌")).to.be.equal("㐷");
+      expect(conv.tc2sc("傌𤳷傌")).to.be.equal("㐷𪽝㐷"); 
     });
   });
 });
