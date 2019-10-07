@@ -1,6 +1,6 @@
 {
   "name": "hanzi-tsconv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hanzi Traditional <-> Simplified conversion",
   "main": "dist/main.js",
   "scripts": {
