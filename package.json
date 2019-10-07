@@ -1,0 +1,60 @@
+{
+  "name": "hanzi-tsconv",
+  "version": "0.1.0",
+  "description": "Hanzi Tradition <-> Simplified conversion",
+  "main": "dist/hanzi-tsconv.min.js",
+  "scripts": {
+    "compile": "webpack --mode=development --env build",
+    "prepublish": "yarn run compile",
+    "build": "yarn run compile",
+    "dev": "webpack --mode=development --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "@babel/preset-env": "^1.7.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "chai": "*",
+    "eslint": "*",
+    "eslint-loader": "*",
+    "mocha": "*",
+    "webpack": "*",
+    "webpack-cli": "^3.3.9",
+    "yargs": "*"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buda-base/js-hanzi-conv.git"
+  },
+  "keywords": [
+    "Hanzi",
+    "Chinese Traditional",
+    "Chinese Simplified"
+  ],
+  "author": "Elie Roux (Buddhist Digital Resource Center)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buda-base/js-hanzi-conv/issues"
+  },
+  "homepage": "https://github.com/buda-base/js-hanzi-conv/issues"
+}
