@@ -1,7 +1,7 @@
 {
   "name": "hanzi-tsconv",
   "version": "0.1.0",
-  "description": "Hanzi Tradition <-> Simplified conversion",
+  "description": "Hanzi Traditional <-> Simplified conversion",
   "main": "dist/main.js",
   "scripts": {
     "compile": "webpack --mode=production --env build",
@@ -63,8 +63,5 @@
   "bugs": {
     "url": "https://github.com/buda-base/js-hanzi-conv/issues"
   },
-  "homepage": "https://github.com/buda-base/js-hanzi-conv/issues",
-  "dependencies": {
-    "@babel/plugin-proposal-export-default-from": "^7.5.2"
-  }
+  "homepage": "https://github.com/buda-base/js-hanzi-conv/issues"
 }
