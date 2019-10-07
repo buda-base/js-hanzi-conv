@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {hanzitsconv} from '../dist/main.js';
+import {conv} from '../dist/main.js';
 
 chai.expect();
 
@@ -12,7 +12,7 @@ let lib;
 describe('Given traditional chinese', () => {
   describe('converting', () => {
     it('should return simplified chinese', () => {
-      expect(hanzitsconv.tc2sc("㑮")).to.be.equal("㗷");
+      expect(conv.tc2sc("㑮")).to.be.equal("㗷");
     });
   });
 });
@@ -20,7 +20,7 @@ describe('Given traditional chinese', () => {
 describe('Given simplified chinese', () => {
   describe('cconverting', () => {
     it('should return traditional chinese', () => {
-      expect(hanzitsconv.tc2sc("㐷")).to.be.equal("傌");
+      expect(conv.tc2sc("㐷")).to.be.equal("傌");
     });
   });
 });

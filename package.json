@@ -14,17 +14,18 @@
   "devDependencies": {
     "@babel/cli": "*",
     "@babel/core": "*",
-    "babel-eslint": "*",
-    "@babel/register": "*",
-    "babel-loader": "*",
     "@babel/preset-env": "^1.7.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "@babel/register": "*",
+    "@babel/plugin-proposal-export-default-from":"*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
     "chai": "*",
     "eslint": "*",
     "eslint-loader": "*",
-    "mocha": "*",
-    "jsdom-global": "*",
     "jsdom": "*",
+    "jsdom-global": "*",
+    "mocha": "*",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "*",
     "webpack-cli": "^3.3.9",
     "yargs": "*"
@@ -43,6 +44,9 @@
   "babel": {
     "presets": [
       "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-export-default-from"
     ]
   },
   "repository": {
@@ -59,5 +63,8 @@
   "bugs": {
     "url": "https://github.com/buda-base/js-hanzi-conv/issues"
   },
-  "homepage": "https://github.com/buda-base/js-hanzi-conv/issues"
+  "homepage": "https://github.com/buda-base/js-hanzi-conv/issues",
+  "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.5.2"
+  }
 }
