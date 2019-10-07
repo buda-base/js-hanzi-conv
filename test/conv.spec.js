@@ -20,7 +20,7 @@ describe('Given traditional chinese', () => {
 describe('Given simplified chinese', () => {
   describe('cconverting', () => {
     it('should return traditional chinese', () => {
-      expect(conv.tc2sc("㐷")).to.be.equal("傌");
+      expect(conv.sc2tc("㐷")).to.be.equal("傌");
     });
   });
 });
