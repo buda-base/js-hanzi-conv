@@ -2,19 +2,20 @@
   "name": "hanzi-tsconv",
   "version": "0.1.0",
   "description": "Hanzi Tradition <-> Simplified conversion",
-  "main": "dist/hanzi-tsconv.min.js",
+  "main": "dist/main.js",
   "scripts": {
-    "compile": "webpack --mode=development --env build",
+    "compile": "webpack --mode=production --env build",
     "prepublish": "yarn run compile",
     "build": "yarn run compile",
     "dev": "webpack --mode=development --env dev",
-    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
-    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+    "test": "mocha -r jsdom-global/register -r @babel/register --colors ./test/*.spec.js",
+    "test:watch": "mocha -r jsdom-global/register -r @babel/register --colors -w ./test/*.spec.js"
   },
   "devDependencies": {
     "@babel/cli": "*",
     "@babel/core": "*",
     "babel-eslint": "*",
+    "@babel/register": "*",
     "babel-loader": "*",
     "@babel/preset-env": "^1.7.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
@@ -22,6 +23,8 @@
     "eslint": "*",
     "eslint-loader": "*",
     "mocha": "*",
+    "jsdom-global": "*",
+    "jsdom": "*",
     "webpack": "*",
     "webpack-cli": "^3.3.9",
     "yargs": "*"

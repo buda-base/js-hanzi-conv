@@ -8,4 +8,4 @@ tcscdata['tc2sc'] = {
 '㘔':'㗷'
 }
 
-export { tcscdata };
+export tcscdata;

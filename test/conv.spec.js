@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {hanzitsconv} from '../dist/hanzi-tsconv.js';
+import {hanzitsconv} from '../dist/main.js';
 
 chai.expect();
 
