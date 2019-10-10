@@ -1,7 +1,9 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {conv} from '../dist/main.js';
+
+require('../dist/main.js');
+const conv = window["hanzi-tsconv"].conv;
 
 chai.expect();
 

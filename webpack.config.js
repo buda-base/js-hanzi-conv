@@ -10,13 +10,11 @@ let plugins = [], outputFile;
 
 const config = {
   entry: __dirname + '/src/hanzi-tsconv.js',
-  devtool: 'source-map',
   output: {
     path: __dirname + '/dist',
     filename: outputFile,
     library: libraryName,
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    libraryTarget: 'global'
   },
   module: {
     rules: [
