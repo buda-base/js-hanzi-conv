@@ -1,6 +1,6 @@
 {
   "name": "hanzi-tsconv",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hanzi Traditional <-> Simplified conversion",
   "main": "dist/main.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "@babel/core": "*",
     "@babel/preset-env": "^1.7.0",
     "@babel/register": "*",
-    "@babel/plugin-proposal-export-default-from":"*",
+    "@babel/plugin-proposal-export-default-from": "*",
     "babel-eslint": "*",
     "babel-loader": "*",
     "chai": "*",
